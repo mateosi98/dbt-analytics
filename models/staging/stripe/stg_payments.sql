@@ -12,4 +12,4 @@ select
 from {{ source('stripe', 'payments')}}
 )
 
-select * from payments
+select * from payments order by payment_id
